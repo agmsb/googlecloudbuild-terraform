@@ -23,6 +23,3 @@ Cloud Build: terraform init, apply -auto-approve
 ## Setup
 
 ## Workflow
-
-
-
