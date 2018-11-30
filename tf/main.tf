@@ -26,7 +26,7 @@ resource "google_container_cluster" "gke-terraform" {
 
 }
 
-/* add node-pool
+/* remove comment to add new node pool
 resource "google_container_node_pool" "op" {
   name       = "olympic-pool"
   zone       = "us-central1-a"
