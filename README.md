@@ -2,11 +2,7 @@
 
 ## TODO
 
-## Setup
-
 Build Terraform Builder
-
-## Workflow
 
 Checkout dev branch
 
@@ -24,6 +20,9 @@ Merge into master
 
 Cloud Build: terraform init, apply -auto-approve
 
+## Setup
+
+## Workflow
 
 
 
