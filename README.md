@@ -23,3 +23,9 @@ Cloud Build: terraform init, apply -auto-approve
 ## Setup
 
 ## Workflow
+
+## Notes
+
+Need to use github build step to create PR automagically
+
+Ideally would write out tfplan and then populate in PR for review
