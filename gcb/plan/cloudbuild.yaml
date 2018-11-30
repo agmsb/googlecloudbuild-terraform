@@ -1,0 +1,14 @@
+# Terraform init, plan
+
+steps:
+- name: 'gcr.io/agmsb-tech-ops/terraform'
+  args: ['init',
+    '-backend-config=project=agmsb-tech-ops',
+    '-backend-config=bucket=agmsb-tech-ops-tfstate']
+  env:
+    - "TF_VAR_project-name=agmsb-tech-ops"
+
+- name: 'gcr.io/agmsb-tech-ops/terraform'
+  args: ['plan', '-out=/workspace/tf']
+  env:
+    - "TF_VAR_project-name=agmsb-tech-ops"
