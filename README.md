@@ -29,3 +29,9 @@ Cloud Build: terraform init, apply -auto-approve
 Need to use github build step to create PR automagically
 
 Ideally would write out tfplan and then populate in PR for review
+
+TFVars
+
+terraform destroy run from Cloud Build
+
+Can always break glass from Cloud Build, with remote state
