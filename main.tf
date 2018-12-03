@@ -34,4 +34,5 @@ resource "google_container_node_pool" "op" {
 
   node_config {
     machine_type = "n1-standard-4"
+  }
 }
