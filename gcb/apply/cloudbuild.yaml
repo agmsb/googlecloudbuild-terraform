@@ -13,7 +13,7 @@ steps:
   env:
     - "TF_VAR_project-name=agmsb-tech-ops"
 
- - name: 'gcr.io/agmsb-tech-ops/terraform'
+- name: 'gcr.io/agmsb-tech-ops/terraform'
   args: ['apply', '-auto-approve']
   env:
     - "TF_VAR_project-name=agmsb-tech-ops"
