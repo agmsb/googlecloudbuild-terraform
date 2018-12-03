@@ -32,4 +32,7 @@ resource "google_container_node_pool" "op" {
   zone       = "us-central1-a"
   cluster    = "gke-terraform"
   node_count = 3
+
+  node_config {
+    machine_type = "n1-standard-4"
 } */
