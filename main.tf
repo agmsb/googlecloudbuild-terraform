@@ -6,7 +6,7 @@ provider "google" {
 resource "google_container_cluster" "gke-terraform" {
   name               = "gke-terraform"
   zone               = "${var.region}"
-  initial_node_count = "3"
+  initial_node_count = "1"
 
   node_config {
     disk_size_gb  = "10"
@@ -26,7 +26,7 @@ resource "google_container_cluster" "gke-terraform" {
 
 }
 
-resource "google_container_node_pool" "op" {
+/* resource "google_container_node_pool" "op" {
   name       = "olympic-pool"
   zone       = "us-central1-a"
   cluster    = "gke-terraform"
@@ -36,3 +36,4 @@ resource "google_container_node_pool" "op" {
     machine_type = "n1-standard-4"
   }
 }
+*/
