@@ -1,19 +1,19 @@
 # prod terraform init, plan, apply 
 
 steps:
-- name: 'gcr.io/agmsb-tech-ops/terraform'
+- name: 'gcr.io/PROJECT-ID/terraform'
   args: ['init',
-    '-backend-config=project=agmsb-tech-ops',
-    '-backend-config=bucket=agmsb-tech-ops-tfstate']
+    '-backend-config=project=PROJECT-ID',
+    '-backend-config=bucket=BUCKET-NAME']
   env:
-    - "TF_VAR_project-name=agmsb-tech-ops"
+    - "TF_VAR_project-name=PROJECT-ID"
 
-- name: 'gcr.io/agmsb-tech-ops/terraform'
+- name: 'gcr.io/PROJECT-ID/terraform'
   args: ['plan']
   env:
-    - "TF_VAR_project-name=agmsb-tech-ops"
+    - "TF_VAR_project-name=PROJECT-ID"
 
-- name: 'gcr.io/agmsb-tech-ops/terraform'
+- name: 'gcr.io/PROJECT-ID/terraform'
   args: ['apply', '-auto-approve']
   env:
-    - "TF_VAR_project-name=agmsb-tech-ops"
+    - "TF_VAR_project-name=PROJECT-ID"

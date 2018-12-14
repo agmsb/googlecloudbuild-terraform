@@ -26,7 +26,7 @@ resource "google_container_cluster" "gke-terraform" {
 
 }
 
-/* resource "google_container_node_pool" "op" {
+resource "google_container_node_pool" "op" {
   name       = "olympic-pool"
   zone       = "us-central1-a"
   cluster    = "gke-terraform"
@@ -36,4 +36,4 @@ resource "google_container_cluster" "gke-terraform" {
     machine_type = "n1-standard-4"
   }
 }
-*/
+
